@@ -1,0 +1,66 @@
+body{
+    background:#333;
+    color:#fff;
+}
+
+.fa{
+    color:#008ed6;
+}
+
+.fas{
+    color:#008ed6;
+}
+
+.navbar{
+    border-bottom:#008ed6 3px solid;
+    z-index:1000;
+}
+
+#home-section{
+   background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size:cover;
+    background-attachment:fixed;
+    min-height:700px;
+}
+
+.nav-link{
+font-size:100%;    
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white; /* Changes regular toggle color */
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+  background-color: white; /* Changes toggle color on hover */
+}
+
+
+.home-inner{
+    padding-top: 150px;
+}
+
+.dark-overlay{
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:700px ;
+}
+#main-footer{
+        border-top:#008ed6 3px solid;
+
+}
+    
+}
+
+.card-form{
+    opacity:0.8;
+}
+
+
+
+#create-section{
+    
+}
+
