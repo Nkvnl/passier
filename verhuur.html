@@ -15,8 +15,8 @@
 </head>
 <body id="home">
   <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-    <div class="container">
-      <a href="index.html" class="navbar-brand"><img src="image/passier.png" width="35%" height="35%" alt=""></a>
+    <div class="container-fluid">
+      <img src="image/passier.png" width="15%" height="15%" alt="">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,10 +32,7 @@
             <a href="verhuur.html" class="nav-link">Verhuur</a>
           </li>
           <li class="nav-item">
-            <a href="onderhoud.html" class="nav-link">Reparatie</a>
-          </li>
-          <li class="nav-item">
-            <a href="onderhoud.html" class="nav-link">Onderhoudsbeurt</a>
+            <a href="onderhoud.html" class="nav-link">Onderhoud & Reparatie</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
@@ -48,13 +45,13 @@
 <header id="home-section2">
     <div class="bg-overlay">
         <div class="home-inner">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                  <div class="col-lg-4">
+                  <!--<div class="col-lg-4">-->
                     
-                  </div>
+                  <!--</div>-->
                     <div class="col-lg-8">
-                        <h1 class="display-4 text-light px-5"> Verhuur <strong>Blaasinstrumenten</strong></h1>
+                        <h1 class="display-4 text-light px-5 d-block-none"> Verhuur <strong class="d-none d-md-block">Blaasinstrumenten</strong></h1>
                         <div class="d-flex flex-row">
                             <div class="p-4 text-light pverkoop align-self-start">
                             </div>
@@ -72,16 +69,16 @@
 </header>
 
 <section id="section-verhuur" class="">
-  <div class="container">
+  <div class="container-fluid">
     <p class="text-muted pt-5 mx-5 px-5">Wij hebben een groot assortiment blaasinstrumenten beschikbaar voor verhuur. 
 Zowel nieuwe als gebruikte instrumenten worden aangeboden om voor een bepaalde tijd te huren. 
 De huurtermijn voor nieuwe instrumenten is minimaal 1 jaar. 
 Voor gebruikte instrumenten zie onderstaande tabel:</p>
  <div class="accordion my-5" id="accordionExample">
   <div class="card">
-    <div class="card-header" id="headingOne">
+    <div class="card-header blue-bg" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Nieuwe instrumenten
         </button>
       </h5>
@@ -89,11 +86,11 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
     
     <p></p>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
+    <div id="collapseOne" class="collapse show col-xs-12" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body table-responsive">
 <table class="table">
   <thead>
-    <tr>
+    <tr class="blue-bg">
       <th scope="col">Netto waarde van het instrument</th>
       <th scope="col">Borg</th>
       <th scope="col">Kwartaal</th>
@@ -102,7 +99,7 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€0,- t/m €250,-</th>
       <td>€50,-</td>
       <td>€60,-</td>
@@ -116,7 +113,7 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
       <td>€120,-</td>
       <td>€150,-</td>
     </tr>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€500,- t/m €750,-</th>
       <td>€50,-</td>
       <td>€125,-</td>
@@ -130,7 +127,7 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
       <td>€225,-</td>
       <td>€300,-</td>
     </tr>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€1000,- t/m €1250,-</th>
       <td>€50,-</td>
       <td>€250,-</td>
@@ -142,9 +139,9 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
     </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    <div class="card-header blue-bg" id="headingTwo">
+      <h5 class="mb-0 text-light">
+        <button class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           Gebruikte instrumenten
         </button>
       </h5>
@@ -153,15 +150,16 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
       <div class="card-body">
 <table class="table">
   <thead>
-    <tr>
+    <tr class="blue-bg">
       <th scope="col">Netto waarde van het instrument</th>
       <th scope="col">Borg</th>
       <th scope="col">Jaar</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€0,- t/m €250,-</th>
+      <td>€50,-</td>
       <td>€100,-</td>
     </tr>
     <tr>
@@ -170,7 +168,7 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
 
       <td>€150,-</td>
     </tr>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€500,- t/m €750,-</th>
       <td>€50,-</td>
 
@@ -182,7 +180,7 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
 
       <td>€300,-</td>
     </tr>
-    <tr>
+    <tr class="light-blue-bg">
       <th scope="row">€1000,- t/m €1250,-</th>
       <td>€50,-</td>
 
@@ -199,16 +197,47 @@ Voor gebruikte instrumenten zie onderstaande tabel:</p>
   <!-- EXPLORE HEAD -->
   
   <!-- MAIN FOOTER -->
-  <footer id="main-footer" class="bg-light">
-    <div class="container">
+<footer id="main-footer" class="bg-light">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col text-center">
-          <div class="py-4">
-            <h1 class="h3 pb-2"><img src="image/passier.png" width="15%" height="15%" alt=""></h1>
-            <button class="btn btn-primary-custom text-white" data-toggle="modal" data-target="#contactModal">Neem contact op</button>
+        <div class="col-md-4 d-none d-md-block">
+          <!--<p class="text-center p1 my-4">Contact</p>-->
+          <p class="text-muted pt-4 text-center">
+            Passier Muziek Emmen <br>
+            Ermerweg 106<br> 
+            7812 BH <br> Emmen <br>
+            passiermuziekemmen@gmail.com<br>
+            <strong>Geopend op afspraak!</strong>
+
+
+          </p>
+        </div>
+        <div class="col-md-4 ">
+          <p class="text-center p1"></p>
+          <div class="mt-4 m-auto text-center f1 f3">
+            <!--<p class="p1 my-4">Passier muziek Emmen</p>-->
+            <h1 class="h3"><img src="image/passier.png" width="35%" height="35%" alt=""></h1>
+            <p>Copyright &copy; 2018</p>
+            <button class="btn btn-primary-custom text-white my-2" data-toggle="modal" data-target="#contactModal">Neem contact op</button>
             <p class="signature pt-4"><em>Gebouwd door: <a href="https://www.niekvanlosenoord.design"></a>niekvanlosenoord.design</em></p>
           </div>
         </div>
+        <div class="col-md-4 text-center pt-4 d-none d-md-block">
+          <!--<p class="text-center p1 my-4">   Links</p><br>-->
+          <a href="index.html" class="text-muted mt-4">Home</a> <br>
+          <a href="verkoop.html" class="text-muted">Verkoop</a> <br>
+          <a href="verhuur.html" class="text-muted">Verhuur</a> <br>
+          <a href="onderhoud.html" class="text-muted">Reparatie</a> <br>
+          <a href="onderhoud.html" class="text-muted">Onderhoud</a> <br>
+          <a href="contact.html" class="text-muted">Contact</a> 
+        </div>
+        <!--<div class="col text-center">-->
+        <!--  <div class="py-4">-->
+        <!--    <h1 class="h3"><img src="image/passier.png" width="15%" height="15%" alt=""></h1>-->
+        <!--    <p>Copyright &copy; 2018</p>-->
+        <!--    <p class="signature pt-4"><em>Gebouwd door: <a href="https://www.niekvanlosenoord.design"></a>niekvanlosenoord.design</em></p>-->
+        <!--  </div>-->
+        <!--</div>-->
       </div>
     </div>
   </footer>
